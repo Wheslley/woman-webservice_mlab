@@ -1,0 +1,614 @@
+{
+	"info": {
+		"_postman_id": "77a8a0cb-488a-4e14-8a88-9ed477981646",
+		"name": "NodeJs-Woman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"description": "",
+			"item": [
+				{
+					"name": "woman/login/validate",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"wheslleyny@gmail.com\",\n    \"senha\": \"senha123\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/woman/login/validate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"woman",
+								"login",
+								"validate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "woman/login/insert",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"Wheslley Nycolas da Silva\",\n    \"dataNascimento\": \"30/01/1992\",\n    \"telefone\": \"(16) 98835 9000\",\n    \"email\": \"wheslleyny@gmail.com\",\n    \"senha\": \"senha123\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/woman/login/insert",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"woman",
+								"login",
+								"insert"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "woman/login/update",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"_id\": \"5ac1377d7613981bb4cd9bb5\",\n    \"nome\": \"Wheslley Nycolas da Silva\",\n    \"dataNascimento\": \"30/01/1992\",\n    \"telefone\": \"(16) 98835 9000\",\n    \"email\": \"wheslleyny@gmail.com\",\n    \"senha\": \"senha1234\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/woman/login/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"woman",
+								"login",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "woman/login/delete",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"_id\": \"5ac1377d7613981bb4cd9bb5\",\n    \"nome\": \"Wheslley Nycolas da Silva\",\n    \"dataNascimento\": \"30/01/1992\",\n    \"telefone\": \"(16) 98835 9000\",\n    \"email\": \"wheslleyny@gmail.com\",\n    \"senha\": \"senha123\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/woman/login/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"woman",
+								"login",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "woman/login/all",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/woman/login/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"woman",
+								"login",
+								"all"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "servico",
+			"description": "",
+			"item": [
+				{
+					"name": "item",
+					"description": "",
+					"item": [
+						{
+							"name": "woman/servico/item/insert",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"nome\":\"Progressiva\",\n\t\"tempo\":\"70\",\n\t\"preco\":\"200\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost:8080/woman/servico/item/insert",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"woman",
+										"servico",
+										"item",
+										"insert"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "woman/servico/item/all",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"url": {
+									"raw": "http://localhost:8080/woman/servico/item/all",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"woman",
+										"servico",
+										"item",
+										"all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "woman/servico/item/update",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"_id\": \"5ac14831cc1cd71d046cdf02\",\n    \"nome\": \"Deletar\",\n    \"tempo\": \"70\",\n    \"preco\": \"200\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost:8080/woman/servico/item/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"woman",
+										"servico",
+										"item",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "woman/servico/item/delete",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"_id\": \"5ac14831cc1cd71d046cdf02\",\n    \"nome\": \"Deletar\",\n    \"tempo\": \"70\",\n    \"preco\": \"200\"\n}"
+								},
+								"url": {
+									"raw": "http://localhost:8080/woman/servico/item/delete",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"woman",
+										"servico",
+										"item",
+										"delete"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "woman/servico/insert",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nome\": \"Cabelo\",\n\t\"profissionais\": [{\n\t\t\"nomeProfissional\": \"Maria\",\n\t\t\"contato\": \"123456\"\n\t},{\n\t\t\"nomeProfissional\": \"Ruth\",\n\t\t\"contato\": \"963268\"\n\t}]\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/woman/servico/insert",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"woman",
+								"servico",
+								"insert"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "woman/servico/all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8080/woman/servico/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"woman",
+								"servico",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "woman/servico/update",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"_id\": \"5ac14534be1bfb0b1ce9de47\",\n    \"nome\": \"Deletar\",\n    \"profissionais\": [\n        {\n            \"nomeProfissional\": \"Suzana\",\n            \"contato\": \"123456\"\n        },\n        {\n            \"nomeProfissional\": \"Elsa\",\n            \"contato\": \"963268\"\n        }\n    ]\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/woman/servico/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"woman",
+								"servico",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "woman/servico/delete",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"_id\": \"5ac14534be1bfb0b1ce9de47\",\n    \"nome\": \"Deletar\",\n    \"profissionais\": [\n        {\n            \"nomeProfissional\": \"Suzana\",\n            \"contato\": \"123456\"\n        },\n        {\n            \"nomeProfissional\": \"Elsa\",\n            \"contato\": \"963268\"\n        }\n    ]\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/woman/servico/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"woman",
+								"servico",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "agendamento",
+			"description": "",
+			"item": [
+				{
+					"name": "woman/agendamento/insert",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"data\": \"01/04/2018\",\n\t\"hora\": \"20:00\",\n\t\"nomePessoa\": \"Deletar\",\n\t\"servicos\": [\n\t\t{\n\t\t\t\"nome\": \"Cabelo\",\n\t\t\t\"itens\":[\n\t\t\t\t{\n\t\t\t\t\t\"nome\":\"Corte\",\n\t\t\t\t\t\"tempo\":\"30\",\n\t\t\t\t\t\"preco\":\"80\"\n\t\t\t\t},\n\t\t\t\t{\n\t\t\t\t\t\"nome\":\"Selante\",\n\t\t\t\t\t\"tempo\":\"60\",\n\t\t\t\t\t\"preco\":\"180\"\n\t\t\t\t}\n\t\t\t]\n\t\t}\n\t]\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/woman/agendamento/insert",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"woman",
+								"agendamento",
+								"insert"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "woman/agendamento/all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8080/woman/agendamento/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"woman",
+								"agendamento",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "woman/agendamento/update",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"_id\": \"5ac14db60b8e7707a0fb61aa\",\n    \"data\": \"01/04/2018\",\n    \"hora\": \"20:00\",\n    \"nomePessoa\": \"Deletar\",\n    \"servicos\": [\n        {\n            \"nome\": \"Cabelo\",\n            \"itens\": [\n                {\n                    \"nome\": \"Corte\",\n                    \"tempo\": \"30\",\n                    \"preco\": \"80\"\n                }\n            ]\n        }\n    ]\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/woman/agendamento/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"woman",
+								"agendamento",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "woman/agendamento/delete",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"_id\": \"5ac14db60b8e7707a0fb61aa\",\n    \"data\": \"01/04/2018\",\n    \"hora\": \"20:00\",\n    \"nomePessoa\": \"Deletar\",\n    \"servicos\": [\n        {\n            \"nome\": \"Cabelo\",\n            \"itens\": [\n                {\n                    \"nome\": \"Corte\",\n                    \"tempo\": \"30\",\n                    \"preco\": \"80\"\n                }\n            ]\n        }\n    ]\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/woman/agendamento/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"woman",
+								"agendamento",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "woman/agendamento/day",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"data\":\"01/04/2018\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/woman/agendamento/day",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"woman",
+								"agendamento",
+								"day"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "woman/agendamento/pessoa",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nomePessoa\":\"Wheslley Nycolas da Silva123\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/woman/agendamento/pessoa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"woman",
+								"agendamento",
+								"pessoa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "woman/agendamento/dataHora",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"data\":\"01/04/2018\",\n\t\"hora\": \"20:00\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/woman/agendamento/dataHora",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"woman",
+								"agendamento",
+								"dataHora"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
